@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | NoBs</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles_about.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Geo:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="logo-container">
+            <img src="{{ url_for('static', filename='images/logo.png') }}" alt="NoBs Logo" class="logo">
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="{{ url_for('home') }}"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="{{ url_for('about') }}"><i class="fas fa-info-circle"></i> About Us</a></li>
+                <li><a href="{{ url_for('services') }}"><i class="fas fa-concierge-bell"></i> Services</a></li>
+                <li><a href="{{ url_for('solutions') }}"><i class="fas fa-lightbulb"></i> Solutions</a></li>
+                <li><a href="{{ url_for('contact') }}"><i class="fas fa-envelope"></i> Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    
+    <main>
+        <section id="who-we-are">
+            <h2>Who We Are</h2>
+            <div class="content">
+                <div class="text">
+                    <p>We are NoBs, a data science and machine learning company headquartered in Kerala, India—a region known for its highly literate and intelligent workforce, despite being underutilized due to political and economic challenges. At NoBs, we focus on one principle: creating real value for our clients. If there’s no value, you pay nothing—our "No Value, Full Refund" guarantee.</p>
+                </div>
+
+            </div>
+        </section>
+        
+        <section id="vision">
+            <h2>Vision</h2>
+            <div class="content">
+                <div class="text">
+                    <p>To democratize AI by making it affordable, practical, and impactful for businesses of all sizes.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="mission">
+            <h2>Mission</h2>
+            <div class="content">
+                <div class="text">
+                    <p>To deliver measurable value through cost-effective AI solutions while leveraging Kerala’s talent and open-source technologies.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="values">
+            <h2>Our Values</h2>
+            <ul>
+                <li>Integrity</li>
+                <li>Customer-Centricity</li>
+                <li>Affordability Without Compromise</li>
+                <li>Results-Driven Approach</li>
+                <li>Innovation and Practicality</li>
+                <li>Empowerment Through Knowledge</li>
+                <li>Sustainability and Community Impact</li>
+            </ul>
+
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 NoBs. All rights reserved.</p>
+    </footer>
+</body>
+</html>

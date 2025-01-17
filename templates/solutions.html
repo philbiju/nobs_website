@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solutions | NoBs</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles_solutions.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Geo:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="logo-container">
+            <img src="{{ url_for('static', filename='images/logo.png') }}" alt="NoBs Logo" class="logo">
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="{{ url_for('home') }}"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="{{ url_for('about') }}"><i class="fas fa-info-circle"></i> About Us</a></li>
+                <li><a href="{{ url_for('services') }}"><i class="fas fa-concierge-bell"></i> Services</a></li>
+                <li><a href="{{ url_for('solutions') }}"><i class="fas fa-lightbulb"></i> Solutions</a></li>
+                <li><a href="{{ url_for('contact') }}"><i class="fas fa-envelope"></i> Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Page Header -->
+        <section class="page-header">
+            <h1>Our Solutions</h1>
+            <p>Innovative technologies to transform your business challenges into opportunities.</p>
+        </section>
+
+        <!-- Solutions Section -->
+        <section class="solutions-grid">
+            <div class="solution-card">
+                <h2>E-commerce Optimization</h2>
+                <p>Boost sales with advanced analytics and personalized customer experiences.</p>
+            </div>
+            <div class="solution-card">
+                <h2>Healthcare Insights</h2>
+                <p>Drive better outcomes with predictive healthcare analytics.</p>
+            </div>
+            <div class="solution-card">
+                <h2>Retail Intelligence</h2>
+                <p>Empower your retail strategies with data-driven insights and automation.</p>
+            </div>
+            <div class="solution-card">
+                <h2>Customer Segmentation</h2>
+                <p>Identify key segments to tailor your offerings and enhance customer satisfaction.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2025 NoBs. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

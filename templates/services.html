@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NoBs | Services</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles_services.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Geo:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="logo-container">
+            <img src="{{ url_for('static', filename='images/logo.png') }}" alt="NoBs Logo" class="logo">
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="{{ url_for('home') }}"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="{{ url_for('about') }}"><i class="fas fa-info-circle"></i> About Us</a></li>
+                <li><a href="{{ url_for('services') }}"><i class="fas fa-concierge-bell"></i> Services</a></li>
+                <li><a href="{{ url_for('solutions') }}"><i class="fas fa-lightbulb"></i> Solutions</a></li>
+                <li><a href="{{ url_for('contact') }}"><i class="fas fa-envelope"></i> Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-text">
+                <h1>Our Expert Services</h1>
+                <p>Explore our tailored AI and data-driven services to accelerate your business growth.</p>
+            </div>
+        </section>
+
+        <section class="services">
+
+            <div class="services-content">
+                <div class="service-category">
+                    <h3>AI Solutions</h3>
+                    <ul>
+                        <li>Chatbots and Virtual Assistants</li>
+                        <li>Predictive Analytics and Forecasting</li>
+                        <li>Computer Vision Applications</li>
+                        <li>Natural Language Processing (NLP)</li>
+                        <li>Recommendation Systems</li>
+                    </ul>
+                </div>
+
+                <div class="service-category">
+                    <h3>Machine Learning</h3>
+                    <ul>
+                        <li>Supervised and Unsupervised Learning Models</li>
+                        <li>Deep Learning (Neural Networks)</li>
+                        <li>Reinforcement Learning</li>
+                        <li>Model Deployment and Monitoring</li>
+                    </ul>
+                </div>
+
+                <div class="service-category">
+                    <h3>Data Engineering</h3>
+                    <ul>
+                        <li>Data Pipeline Development (ETL/ELT)</li>
+                        <li>Data Warehousing and Big Data Management</li>
+                        <li>Cloud Data Integration (Azure, AWS, Google Cloud)</li>
+                        <li>Real-Time Data Processing</li>
+                    </ul>
+                </div>
+
+                <div class="service-category">
+                    <h3>BI & Analytics</h3>
+                    <ul>
+                        <li>Dashboard Development (Power BI, Tableau, Streamlit)</li>
+                        <li>Advanced Data Visualization</li>
+                        <li>KPI and Metric Tracking</li>
+                        <li>Multivariate Analysis and Experimentation</li>
+                    </ul>
+                </div>
+
+                <div class="service-category">
+                    <h3>Custom Software Development</h3>
+                    <ul>
+                        <li>AI-Powered Web and Mobile Applications</li>
+                        <li>Streamlit and Python-Based Tools</li>
+                        <li>End-to-End Integration of Open-Source and Proprietary Tools</li>
+                    </ul>
+                </div>
+
+                <div class="service-category">
+                    <h3>Data Science Consulting</h3>
+                    <ul>
+                        <li>Data Strategy and Roadmap Development</li>
+                        <li>Feasibility Studies and Proof-of-Concepts (PoCs)</li>
+                        <li>Cost Optimization Through Open-Source Solutions</li>
+                    </ul>
+                </div>
+
+                <div class="service-category">
+                    <h3>Industry-Specific Solutions</h3>
+                    <ul>
+                        <li>E-commerce: Customer Segmentation, Churn Prediction, and Price Optimization</li>
+                        <li>Healthcare: Patient Survival Analysis, Medical Imaging, and Diagnostic Models</li>
+                        <li>Retail: Inventory Forecasting, Market Basket Analysis</li>
+                        <li>Finance: Fraud Detection, Risk Analysis, and Credit Scoring</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2025 NoBs. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

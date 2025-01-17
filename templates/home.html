@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NoBs | Home</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Geo:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="logo-container">
+            <img src="{{ url_for('static', filename='images/logo.png') }}" alt="NoBs Logo" class="logo">
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="{{ url_for('home') }}"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="{{ url_for('about') }}"><i class="fas fa-info-circle"></i> About Us</a></li>
+                <li><a href="{{ url_for('services') }}"><i class="fas fa-concierge-bell"></i> Services</a></li>
+                <li><a href="{{ url_for('solutions') }}"><i class="fas fa-lightbulb"></i> Solutions</a></li>
+                <li><a href="{{ url_for('contact') }}"><i class="fas fa-envelope"></i> Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-text">
+                <h1>
+                    <span class="typed-out">No Fluff. No Risk. <b>All Value</b></span>
+                </h1>
+                <p>Delivering cutting-edge solutions to revolutionize the way you leverage data.</p>
+                <a href="{{ url_for('solutions') }}" class="cta-button">Discover Our Solutions</a>
+            </div>
+        </section>
+    </main>
+    
+    <section class="why-choose-us">
+        <h2>Why Choose Us</h2>
+        <div class="features-grid">
+            <div class="feature">
+                <h3>Real Value</h3>
+                <p>We focus on delivering measurable business impact, not just ticking off deliverables.</p>
+            </div>
+            <div class="feature">
+                <h3>Affordable Expertise</h3>
+                <p>By leveraging India’s skilled workforce and open-source tools, we keep costs low without sacrificing quality.</p>
+            </div>
+            <div class="feature">
+                <h3>Risk-Free</h3>
+                <p>Our “No Value, Full Refund” guarantee ensures you only pay if you see results.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="services-preview">
+        <h2>Our Services</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <h3>AI & Data Analytics</h3>
+                <p>Transform your business with actionable insights powered by AI.</p>
+            </div>
+            <div class="service-card">
+                <h3>Predictive Modeling</h3>
+                <p>Unlock the future with predictions that shape business strategies.</p>
+            </div>
+            <div class="service-card">
+                <h3>Automation</h3>
+                <p>Streamline operations and save time with intelligent automation.</p>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2025 NoBs. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
