@@ -1,206 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charSet="utf-8"/>
-
-        <link rel="stylesheet" href="static/css/370afb91fb61dc45.css" data-precedence="next"/>
-
-
-        <title>NoBS</title>
-
-
-
-    </head>
-    <body>
-        <div>
-
-
-<!DOCTYPE html>
-<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Extracted Parts</title>
+    <title>NoBs | Home</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Geo:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-
-    <div class="flex flex-row items-center justify-between px-20 py-10">
-        <div class="basis-1 block m-auto lg:m-0 lg:basis-1/5">
-            <div class="justify-center flex flex-row lg:justify-start">
-                <img draggable="false" alt="" loading="lazy" width="70" height="70" decoding="async" data-nimg="1" class="mr-3" style="color:transparent" srcSet="static/images/logo1.png"/>
-            </div>
+    <header class="main-header">
+        <div class="logo-container">
+            <img src="{{ url_for('static', filename='images/logoa.png') }}" alt="NoBs Logo" class="logo">
         </div>
-        <div class="hidden lg:flex lg:flex-row lg:basis-3/5 justify-end">
-            <ul class="space-x-10">
-                <li class="inline-block text-base align-middle font-semibold text-navbar_text_default cursor-pointer hover:text-white bg-gradient-to-r from-pink_1_left to-pink_1_right bg-[length:100%_1px] bg-no-repeat bg-bottom">
-                    <a href="{{ url_for('home') }}"><i class="fas fa-home"></i>Home</a>
-                </li>
-                <li class="inline-block text-base align-middle font-semibold text-navbar_text_default cursor-pointer hover:text-white bg-gradient-to-r from-pink_1_left to-pink_1_right bg-[length:100%_1px] bg-no-repeat bg-bottom">
-                    <a href="{{ url_for('services') }}"><i class="fas fa-concierge-bell"></i> Services</a>
-                </li>
-                <li class="inline-block text-base align-middle font-semibold text-navbar_text_default cursor-pointer hover:text-white bg-gradient-to-r from-pink_1_left to-pink_1_right bg-[length:100%_1px] bg-no-repeat bg-bottom">
-                    <a href="{{ url_for('solutions') }}"><i class="fas fa-lightbulb"></i> Solutions</a>
-                </li>
-                <li class="inline-block text-base align-middle font-semibold text-navbar_text_default cursor-pointer hover:text-white bg-gradient-to-r from-pink_1_left to-pink_1_right bg-[length:100%_1px] bg-no-repeat bg-bottom">
-                    <a href="{{ url_for('about') }}"><i class="fas fa-info-circle"></i> About Us</a>
-                </li>
-                <li class="inline-block text-base align-middle font-semibold text-navbar_text_default cursor-pointer hover:text-white bg-gradient-to-r from-pink_1_left to-pink_1_right bg-[length:100%_1px] bg-no-repeat bg-bottom">
-                    <a href="{{ url_for('contact') }}"><i class="fas fa-envelope"></i> Contact</a>
-                </li>
-
+        <nav class="navbar">
+            <ul>
+                <li><a href="{{ url_for('home') }}"></i> Home</a></li>
+                <li><a href="{{ url_for('about') }}"></i> About Us</a></li>
+                <li><a href="{{ url_for('services') }}"></i> Services</a></li>
+                <li><a href="{{ url_for('solutions') }}"></i> Solutions</a></li>
+                <li><a href="{{ url_for('contact') }}"></i> Contact</a></li>
             </ul>
-        </div>
-    </div>
+        </nav>
+    </header>
 
-        <!-- 1. Answer Schedule Confirm & Text -->
-        <h1 class="text-5xl lg:text-[60px] xl:text-[65px] 2xl:text-[90px] font-medium w-full text-center text-white">
-            No Fluff. No Risk. <span class="inline-block bg-gradient-24 from-header_left to-header_right text-transparent bg-clip-text">All Value</span>
-            <span class="inline-block text-period_color"></span>
-        </h1>
-        <h3 class="text-md py-14 md:py-14 lg:py-16 xl:py-20 text-center sm:text-lg lg:text-xl xl:text-2xl font-light">
-            Your Data Playground - Experiment. Learn. Grow. <br/>
-            Experiment freely. See real value. Pay only if it works.
-        </h3>
+    <main>
+        <section class="hero">
+            <div class="hero-text">
+                <h1>
+                    <span class="typed-out">No Fluff. No Risk. <b>All Value</b></span>
+                </h1>
+                <p>Delivering cutting-edge solutions to revolutionize the way you leverage data.</p>
+                <a href="{{ url_for('solutions') }}" class="cta-button">Discover Our Solutions</a>
+            </div>
+        </section>
+    </main>
     
-
-    <!-- 3. Schedule Buttons -->
-    <div class="flex flex-col sm:flex-row justify-center align-middle">
-        <a href="{{ url_for('solutions') }}" class="flex w-full sm:w-auto">
-            <button class="sm:mx-6 w-full my-auto bg-white hover:bg-black_1 text-black_1 hover:text-white px-9 py-4 rounded ring-1 ring-white">
-                <div class="inline-block align-middle font-semibold">Discover Solutions</div>
-                <div class="inline-block align-middle px-1">
-                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
-                        <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"></path>
-                    </svg>
-                </div>
-            </button>
-        </a>
-        <a href="{{ url_for('services') }}" class="flex w-full sm:w-auto">
-        <button type="button" aria-haspopup="dialog" aria-expanded="false" aria-controls="radix-:R52dja:" data-state="closed">
-            <div class="mx-auto py-5 sm:py-0 flex w-full items-center justify-center">
-                <div class="px-[1.5px] w-full sm:w-auto relative z-10 flex cursor-pointer items-center overflow-hidden rounded border border-header_right p-[1.5px]" style="border-color:rgba(252, 125, 255, 0.5)">
-                    <div class="animate-rotate absolute inset-0 h-full w-full rounded bg-[conic-gradient(#FA68CF_20deg,transparent_120deg)] opacity-100 blur-xs"></div>
-                    <div class="relative z-20 py-4 sm:px-9 flex w-full rounded-[0.17rem] bg-black text-white text-center justify-center align-middle font-semibold hover:bg-gradient-to-r from-header_left to-header_right hover:text-black">Explore Services</div>
-                </div>
+    <section class="why-choose-us">
+        <h2>Why Choose Us</h2>
+        <div class="features-grid">
+            <div class="feature">
+                <h3>Real Value</h3>
+                <p>We focus on delivering measurable business impact, not just ticking off deliverables.</p>
             </div>
-        </button>
-    </div>
-    </a>
-<!-- 4. Industries & Applications Section -->
-<div class="py-20 flex flex-col lg:flex-row flex-row-2" data-aos="fade-up" data-aos-delay="100">
-    <div class="px-8 md:px-20 basis-1/2">
-        <div class="inline-block bg-gradient-24 from-header_left to-header_right text-transparent bg-clip-text text-lg font-light pb-5">OUR UNIQUE PROPOSITION</div>
-        <div class="text-white text-3xl md:text-5xl pb-5">No Bullsh*t,<br/>Just Results. </div>
-       
-        <div class="py-5">
-            <div class="flex flex-row  pl-5 cursor-pointer selected">
-                <div class="vl pl-3"></div>
-                <div class="py-2">
-                    <div class="text-white text-xl font-semibold">Experiment Freely</div>
-                    <div class="text-gray_5 text-lg">Test your ideas before investing big. See value without draining your budget.</div>
-                </div>
+            <div class="feature">
+                <h3>Affordable Expertise</h3>
+                <p>By leveraging India’s skilled workforce and open-source tools, we keep costs low without sacrificing quality.</p>
             </div>
-            <div class="flex flex-row pl-5 cursor-pointer selected">
-                <div class="vl pl-3"></div>
-                <div class="py-2">
-                    <div class="text-white text-xl font-semibold">See Real Value</div>
-                    <div class="text-gray_5 text-lg">You see results before committing big. Have a partner who’s honest, no-fluff, and focused on your success.</div>
-                </div>
-            </div>
-            <div class="flex flex-row  pl-5 cursor-pointer selected">
-                <div class="vl pl-3"></div>
-                <div class="py-2">
-                    <div class="text-white text-xl font-semibold">Pay Only If It Works</div>
-                    <div class="text-gray_5 text-lg">No value generated? Full refund guaranteed. No questions asked.</div>
-                </div>
-            </div>
-            <div class="flex flex-row  pl-5 cursor-pointer selected">
-                <div class="vl pl-3"></div>
-
+            <div class="feature">
+                <h3>Risk-Free</h3>
+                <p>Our “No Value, Full Refund” guarantee ensures you only pay if you see results.</p>
             </div>
         </div>
+    </section>
 
-    </div>
-    <div class="flex justify-center items-center p-8 my-auto basis-1/2 h-full">
-        <div class="w-full flex justify-center" data-aos="fade-up" data-aos-delay="100">
-            <div class="md:w-5/12 lg:w-3/4 relative py-24 -mt-12">
-                <div class="absolute inset-0 -z-10" aria-hidden="true">
-                    <canvas></canvas>
-                </div>
-                <div class="flex items-center justify-center">
-                    <div class="relative">
-                        <svg class="absolute inset-0 left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 will-change-transform pointer-events-none blur-md sm:w-[640px] sm:h-[640px] w-[320px] h-[320px]" viewBox="0 0 640 640" xmlns="http://www.w3.org/2000/svg">
-                            <defs>
-                                <linearGradient id="pulse-a" x1="50%" x2="50%" y1="100%" y2="0%">
-                                    <stop offset="0%" stop-color="#D6BCFE" stop-opacity="0.4"></stop>
-                                    <stop offset="76.382%" stop-color="#FAF5FF" stop-opacity="0.4"></stop>
-                                    <stop offset="100%" stop-color="#A5B4FC" stop-opacity="0.4"></stop>
-                                </linearGradient>
-                            </defs>
-                            <g fill-rule="evenodd">
-                                <path class="pulse" fill="url(#pulse-a)" fill-rule="evenodd" d="M320,0 C496.7312,0 640,143.2688 640,320 C640,496.7312 496.7312,640 320,640 C143.2688,640 0,496.7312 0,320 C0,143.2688 143.2688,0 320,0 Z M320,118.4 C208.6592,118.4 118.4,208.6592 118.4,320 C118.4,431.3408 208.6592,521.6 320,521.6 C431.3408,521.6 521.6,431.3408 521.6,320 C521.6,208.6592 431.3408,118.4 320,118.4 Z"></path>
-                                <path class="pulse pulse-1" fill="url(#pulse-a)" fill-rule="evenodd" d="M320,0 C496.7312,0 640,143.2688 640,320 C640,496.7312 496.7312,640 320,640 C143.2688,640 0,496.7312 0,320 C0,143.2688 143.2688,0 320,0 Z M320,118.4 C208.6592,118.4 118.4,208.6592 118.4,320 C118.4,431.3408 208.6592,521.6 320,521.6 C431.3408,521.6 521.6,431.3408 521.6,320 C521.6,208.6592 431.3408,118.4 320,118.4 Z"></path>
-                                <path class="pulse pulse-2" fill="url(#pulse-a)" fill-rule="evenodd" d="M320,0 C496.7312,0 640,143.2688 640,320 C640,496.7312 496.7312,640 320,640 C143.2688,640 0,496.7312 0,320 C0,143.2688 143.2688,0 320,0 Z M320,118.4 C208.6592,118.4 118.4,208.6592 118.4,320 C118.4,431.3408 208.6592,521.6 320,521.6 C431.3408,521.6 521.6,431.3408 521.6,320 C521.6,208.6592 431.3408,118.4 320,118.4 Z"></path>
-                            </g>
-                        </svg>
-                        <div class="absolute inset-0 left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 pointer-events-none w-[300px] h-[300px] sm:w-[640px] sm:h-[640px] rounded-full overflow-hidden [mask-image:_radial-gradient(black,_transparent_60%)]">
-
-                        </div>
-                        
-                        <!-- Image Container -->
-                        <div class="flex items-center justify-center Z-relative top">
-                            <img
-                                src="static/images/logo2.png"
-                                alt="Center Image"
-
-                            />
-                        </div>
-                    </div>
-                </div>
+    <section class="services-preview">
+        <h2>Our Services</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <h3>AI & Data Analytics</h3>
+                <p>Transform your business with actionable insights powered by AI.</p>
+            </div>
+            <div class="service-card">
+                <h3>Predictive Modeling</h3>
+                <p>Unlock the future with predictions that shape business strategies.</p>
+            </div>
+            <div class="service-card">
+                <h3>Automation</h3>
+                <p>Streamline operations and save time with intelligent automation.</p>
             </div>
         </div>
-    </div>
-</div>
-
-    <!-- 5. Get Started Section -->
-    <div class="__className_7986b8">
-
-            <div class="inline-block bg-gradient-24 from-header_left to-header_right text-transparent bg-clip-text text-lg font-light pb-5 md:pb-10 w-full text-center">HOW IT WORKS</div>
-            <div class="text-white text-3xl md:text-5xl m-auto w-full text-center">No Fluff, Just Action</div>
-            <div class="text-gray_5 text-lg w-full md:w-[60%] m-auto text-center py-5 md:py-10">Tell us what’s keeping you up at night.
-                <br>We test fast, low-cost, and smart.
-                <br>You see results before scaling.</div>
-            <div class="flex flex-col sm:flex-row justify-center align-middle">
-                <a href="{{ url_for('about') }}" class="flex w-auto">
-                    <button class="mx-6 w-full my-auto bg-white hover:bg-black_1 text-black_1 hover:text-white  px-9 py-4 rounded ring-1 ring-white">
-                        <div class="inline-block align-middle font-semibold">About Us</div>
-                        <div class="inline-block align-middle px-1">
-                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
-                                <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"></path>
-                            </svg>
-                        </div>
-                    </button>
-                </a>
-                <div class="relative mx-6 my-5 sm:mx-0 cursor-pointer">
-                    <div class="relative p-px rounded bg-gradient-to-r from-header_left to-header_right ">
-                        <a href="{{ url_for('contact') }}">
-                            <div class="px-0 w-full py-4 sm:px-9 text-gray_5 bg-black_1 hover:text-black_1 hover:bg-transparent rounded">
-                                <div class="w-full flex justify-center">
-                                    <div class="inline-block align-middle font-semibold">Let's Talk</div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="absolute -z-10 left-3 right-3 top-0 mx-auto  border-r-[20px] border-b-[55px]  border-l-[20px] border-solid border-r-transparent border-l-transparent border-b-[#F427AE] rounded-md blur-xl opacity-60"></div>
-                </div>
-            </div>
-            <div class="flex justify-center py-5 md:py-10">
-                <button type="button" aria-haspopup="dialog" aria-expanded="false" aria-controls="radix-:R6dja:" data-state="closed">
-                </button>
-            </div>
+    </section>
+    
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2025 NoBs. All rights reserved.</p>
         </div>
-    </div>
-
-  
+    </footer>
 </body>
 </html>
